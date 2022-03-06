@@ -1,15 +1,15 @@
 {
   "name": "whurdal-word-verifier",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package to verify Wordle words",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
     "test": "jest --config jestconfig.json",
-    "prepare" : "npm run build",
-    "prepublishOnly" : "npm test",
-    "version" : "git add -A src",
-    "postversion" : "git push && git push --tags"
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "devDependencies": {
     "@types/jest": "^27.4.1",
