@@ -1,4 +1,4 @@
-import verify from "../verify";
+import { verify } from "../verify";
 
 describe('Verify', () => {
     it('returns true for valid words', () => {
