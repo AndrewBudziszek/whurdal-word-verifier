@@ -3,7 +3,7 @@
     "declaration": true,
     "strictNullChecks": true,
     "target": "es5",
-    "outDir": "./lib",
+    "outDir": "lib",
     "module": "commonjs",
     "moduleResolution": "node",
     "sourceMap": true,
