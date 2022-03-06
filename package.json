@@ -2,7 +2,8 @@
   "name": "whurdal-word-verifier",
   "version": "1.0.6",
   "description": "A package to verify Wordle words",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "jest --config jestconfig.json",
