@@ -1,19 +1,33 @@
 {
   "name": "whurdal-word-verifier",
   "version": "1.0.0",
-  "description": "A package to verify wordle words",
+  "description": "A package to verify Wordle words",
   "main": "index.js",
   "scripts": {
-    "build" : "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "jest --config jestconfig.json",
+    "prepare" : "npm run build",
+    "prepublishOnly" : "npm test",
+    "version" : "git add -A src",
+    "postversion" : "git push && git push --tags"
   },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.6.2"
+  },
+  "files": [
+    "lib/**/*"
+  ],
   "keywords": [
     "wordle",
     "whurdal"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SonnyBrooks/whurdal-word-verifier.git"
+  },
   "author": "Andrew Budziszek",
-  "license": "ISC",
-  "devDependencies": {
-    "typescript": "^4.6.2"
-  }
+  "license": "ISC"
 }
