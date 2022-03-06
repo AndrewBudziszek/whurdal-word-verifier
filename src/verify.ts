@@ -1,6 +1,6 @@
 import trie from "./trie";
 
-export function verify(word: string): boolean {
+export default function verify(word: string): boolean {
     if(typeof word !== 'string') return false;
 
     let node = trie;
