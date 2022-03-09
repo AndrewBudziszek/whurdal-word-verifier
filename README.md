@@ -18,3 +18,6 @@ verify('abcde'); // false - not a real word
 verify('thanks'); // false - a real word that is too long
 verify('part'); //false - a real word that is too short
 ```
+
+## Support Me
+Hi! If you'd like to support me you can [buy me a coffee](https://www.buymeacoffee.com/SonBrooks) or send me some crypto on Coinbase @SonBrooks. :)  
